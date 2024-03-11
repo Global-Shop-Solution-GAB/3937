@@ -1,0 +1,397 @@
+Program.Sub.ScreenSU.Start
+gui.SS_Form1..create
+gui.SS_Form1..caption("Select Parameters")
+gui.SS_Form1..size(5020,3465)
+gui.SS_Form1..minx(0)
+gui.SS_Form1..miny(0)
+gui.SS_Form1..position(0,0)
+gui.SS_Form1..event(unload,UNLOAD)
+gui.SS_Form1..alwaysontop(False)
+gui.SS_Form1..fontname("Arial")
+gui.SS_Form1..fontsize(8)
+gui.SS_Form1..forecolor(0)
+gui.SS_Form1..fontstyle(,,,,)
+gui.SS_Form1..BackColor(-2147483633)
+gui.SS_Form1..controlbox(True)
+gui.SS_Form1..maxbutton(False)
+gui.SS_Form1..minbutton(False)
+gui.SS_Form1..mousepointer(0)
+gui.SS_Form1..moveable(True)
+gui.SS_Form1..sizeable(False)
+gui.SS_Form1..ShowInTaskBar(True)
+gui.SS_Form1..titlebar(True)
+gui.SS_Form1.lbl_dtpStart.create(label,"Date Paid Start",True,1800,200,1,100,135,True,0,Arial,8,-2147483633,0)
+gui.SS_Form1.lbl_dtpStart.defaultvalue("")
+gui.SS_Form1.lbl_dtpStart.controlgroup(0)
+gui.SS_Form1.dtpStart.create(datepicker)
+gui.SS_Form1.dtpStart.visible(True)
+gui.SS_Form1.dtpStart.size(1800,345)
+gui.SS_Form1.dtpStart.zorder(0)
+gui.SS_Form1.dtpStart.position(100,335)
+gui.SS_Form1.dtpStart.enabled(True)
+gui.SS_Form1.dtpStart.checkbox(False)
+gui.SS_Form1.dtpStart.defaultvalue("")
+gui.SS_Form1.dtpStart.controlgroup(0)
+gui.SS_Form1.lbl_dtpEnd.create(label,"Date Paid End",True,1800,200,1,1985,135,True,0,Arial,8,-2147483633,0)
+gui.SS_Form1.lbl_dtpEnd.defaultvalue("")
+gui.SS_Form1.lbl_dtpEnd.controlgroup(0)
+gui.SS_Form1.dtpEnd.create(datepicker)
+gui.SS_Form1.dtpEnd.visible(True)
+gui.SS_Form1.dtpEnd.size(1800,345)
+gui.SS_Form1.dtpEnd.zorder(0)
+gui.SS_Form1.dtpEnd.position(1985,335)
+gui.SS_Form1.dtpEnd.enabled(True)
+gui.SS_Form1.dtpEnd.checkbox(False)
+gui.SS_Form1.dtpEnd.defaultvalue("")
+gui.SS_Form1.dtpEnd.controlgroup(0)
+gui.SS_Form1.chk_AllDates.create(checkbox)
+gui.SS_Form1.chk_AllDates.caption("All Dates")
+gui.SS_Form1.chk_AllDates.visible(True)
+gui.SS_Form1.chk_AllDates.size(1800,300)
+gui.SS_Form1.chk_AllDates.zorder(0)
+gui.SS_Form1.chk_AllDates.position(100,850)
+gui.SS_Form1.chk_AllDates.enabled(True)
+gui.SS_Form1.chk_AllDates.alignment(0)
+gui.SS_Form1.chk_AllDates.fontname("Arial")
+gui.SS_Form1.chk_AllDates.fontsize(8)
+gui.SS_Form1.chk_AllDates.event(click,chk_alldates_click)
+gui.SS_Form1.chk_AllDates.defaultvalue("")
+gui.SS_Form1.chk_AllDates.controlgroup(0)
+gui.SS_Form1.lbl_txtStartCust.create(label,"Start Customer",True,1800,200,1,100,1320,True,0,Arial,8,-2147483633,0)
+gui.SS_Form1.lbl_txtStartCust.defaultvalue("")
+gui.SS_Form1.lbl_txtStartCust.controlgroup(0)
+gui.SS_Form1.txtStartCust.create(textbox,"",True,1800,330,0,100,1520,False,0,Arial,8,16777215,1)
+gui.SS_Form1.txtStartCust.defaultvalue("")
+gui.SS_Form1.txtStartCust.controlgroup(0)
+gui.SS_Form1.cmd_txtStartCust.create(button)
+gui.SS_Form1.cmd_txtStartCust.caption("^")
+gui.SS_Form1.cmd_txtStartCust.visible(True)
+gui.SS_Form1.cmd_txtStartCust.size(330,330)
+gui.SS_Form1.cmd_txtStartCust.zorder(0)
+gui.SS_Form1.cmd_txtStartCust.position(1985,1520)
+gui.SS_Form1.cmd_txtStartCust.enabled(True)
+gui.SS_Form1.cmd_txtStartCust.fontname("Arial")
+gui.SS_Form1.cmd_txtStartCust.fontsize(8)
+gui.SS_Form1.cmd_txtStartCust.event(click,cmd_txtstartcust_click)
+gui.SS_Form1.cmd_txtStartCust.defaultvalue("")
+gui.SS_Form1.cmd_txtStartCust.controlgroup(0)
+gui.SS_Form1.lbl_txtEndCust.create(label,"End Customer",True,1800,200,1,2455,1320,True,0,Arial,8,-2147483633,0)
+gui.SS_Form1.lbl_txtEndCust.defaultvalue("")
+gui.SS_Form1.lbl_txtEndCust.controlgroup(0)
+gui.SS_Form1.txtEndCust.create(textbox,"",True,1800,330,0,2455,1520,False,0,Arial,8,16777215,1)
+gui.SS_Form1.txtEndCust.defaultvalue("")
+gui.SS_Form1.txtEndCust.controlgroup(0)
+gui.SS_Form1.cmd_txtEndCust.create(button)
+gui.SS_Form1.cmd_txtEndCust.caption("^")
+gui.SS_Form1.cmd_txtEndCust.visible(True)
+gui.SS_Form1.cmd_txtEndCust.size(330,330)
+gui.SS_Form1.cmd_txtEndCust.zorder(0)
+gui.SS_Form1.cmd_txtEndCust.position(4340,1520)
+gui.SS_Form1.cmd_txtEndCust.enabled(True)
+gui.SS_Form1.cmd_txtEndCust.fontname("Arial")
+gui.SS_Form1.cmd_txtEndCust.fontsize(8)
+gui.SS_Form1.cmd_txtEndCust.event(click,cmd_txtendcust_click)
+gui.SS_Form1.cmd_txtEndCust.defaultvalue("")
+gui.SS_Form1.cmd_txtEndCust.controlgroup(0)
+gui.SS_Form1.chk_AllCust.create(checkbox)
+gui.SS_Form1.chk_AllCust.caption("All Customers")
+gui.SS_Form1.chk_AllCust.visible(True)
+gui.SS_Form1.chk_AllCust.size(1800,300)
+gui.SS_Form1.chk_AllCust.zorder(0)
+gui.SS_Form1.chk_AllCust.position(100,2020)
+gui.SS_Form1.chk_AllCust.enabled(True)
+gui.SS_Form1.chk_AllCust.alignment(0)
+gui.SS_Form1.chk_AllCust.fontname("Arial")
+gui.SS_Form1.chk_AllCust.fontsize(8)
+gui.SS_Form1.chk_AllCust.event(click,chk_allcust_click)
+gui.SS_Form1.chk_AllCust.defaultvalue("")
+gui.SS_Form1.chk_AllCust.controlgroup(0)
+gui.SS_Form1.cmdPrint.create(button)
+gui.SS_Form1.cmdPrint.caption("Print")
+gui.SS_Form1.cmdPrint.visible(True)
+gui.SS_Form1.cmdPrint.size(1000,360)
+gui.SS_Form1.cmdPrint.zorder(0)
+gui.SS_Form1.cmdPrint.position(100,2490)
+gui.SS_Form1.cmdPrint.enabled(True)
+gui.SS_Form1.cmdPrint.fontname("Arial")
+gui.SS_Form1.cmdPrint.fontsize(8)
+gui.SS_Form1.cmdPrint.event(click,cmdprint_click)
+gui.SS_Form1.cmdPrint.defaultvalue("")
+gui.SS_Form1.cmdPrint.controlgroup(0)
+gui.SS_Form1.dtpStart.tabstop(true)
+gui.SS_Form1.dtpStart.tabindex(1)
+gui.SS_Form1.dtpEnd.tabstop(true)
+gui.SS_Form1.dtpEnd.tabindex(2)
+gui.SS_Form1.chk_AllDates.tabstop(true)
+gui.SS_Form1.chk_AllDates.tabindex(3)
+gui.SS_Form1.txtStartCust.tabstop(true)
+gui.SS_Form1.txtStartCust.tabindex(4)
+gui.SS_Form1.cmd_txtStartCust.tabstop(true)
+gui.SS_Form1.cmd_txtStartCust.tabindex(5)
+gui.SS_Form1.txtEndCust.tabstop(true)
+gui.SS_Form1.txtEndCust.tabindex(6)
+gui.SS_Form1.cmd_txtEndCust.tabstop(true)
+gui.SS_Form1.cmd_txtEndCust.tabindex(7)
+gui.SS_Form1.chk_AllCust.tabstop(true)
+gui.SS_Form1.chk_AllCust.tabindex(8)
+gui.SS_Form1.cmdPrint.tabstop(true)
+gui.SS_Form1.cmdPrint.tabindex(9)
+
+
+Program.Sub.ScreenSU.End
+
+Program.Sub.Preflight.Start
+Variable.UDT.uReport.Define("BIRUNID",String)
+Variable.UDT.uReport.Define("CUSTOMER",String,CUSTOMER)
+Variable.UDT.uReport.Define("INVOICE",String,INVOICE)
+Variable.UDT.uReport.Define("DATE_INVOICE",String,DATE_INVOICE)
+Variable.UDT.uReport.Define("DAYS_TO_PAY",String)
+Variable.UDT.uReport.Define("CUST_NAME",String)
+Variable.UDT.uReport.Define("DATE_PAID",String)
+Variable.UDT.uReport.Define("INVOICE_TOTAL",String,TOTAL)
+Variable.Global.bAllCust.Declare(Boolean,False)
+Variable.Global.bAllDates.Declare(Boolean,False)
+Variable.uGlobal.uReport.Declare("uReport")
+Program.Sub.Preflight.End
+
+Program.Sub.Main.Start
+'Coded by BJL
+'4/6/2014
+'NCS (Customer)
+'Returns a crystal report depicting thew average days to pay for a specific Date Range (or all dates) and/or a specific Customer Range (or all customers)
+'Quote 5607
+'PWP
+
+
+
+'Open database connection
+F.ODBC.Connection!Conx.OpenConnection(V.Ambient.PDSN,V.Ambient.PUser,V.Ambient.PPass)
+
+'Open screen and wait for selections
+Gui.SS_Form1..Show
+
+
+Program.Sub.Main.End
+
+program.sub.UNLOAD.start
+
+F.ODBC.Connection!Conx.Close
+F.Intrinsic.Control.End
+
+program.sub.UNLOAD.end
+
+program.sub.cmd_txtstartcust_click.start
+'This sub will fire when clicking to browse the starting customer for the customer range. The result will return to the starting customer field
+
+'Declare variables
+V.Local.sRet.Declare(String)
+
+F.Intrinsic.UI.Browser(225,"",V.Local.sRet)
+F.Intrinsic.Control.If(V.Local.sRet,<>,"***CANCEL***")
+	F.Intrinsic.String.Split(V.Local.sRet,"*!*",V.Local.sRet)
+	Gui.SS_Form1.txtStartCust.Text(V.Local.sRet(0).trim)
+F.Intrinsic.Control.EndIf
+
+program.sub.cmd_txtstartcust_click.end
+
+program.sub.cmd_txtendcust_click.start
+'This sub will fire when clicking to browse the ending customer for the customer range. The result will return to the ending customer field
+
+'Declare variables
+V.Local.sRet.Declare(String)
+
+F.Intrinsic.UI.Browser(225,"",V.Local.sRet)
+F.Intrinsic.Control.If(V.Local.sRet,<>,"***CANCEL***")
+	F.Intrinsic.String.Split(V.Local.sRet,"*!*",V.Local.sRet)
+	Gui.SS_Form1.txtEndCust.Text(V.Local.sRet(0).trim)
+F.Intrinsic.Control.EndIf
+
+program.sub.cmd_txtendcust_click.end
+
+program.sub.chk_alldates_click.start
+'When "All Dates" is selected, lock the entry fields for date range. When it is unchecked, unlock all fields.
+
+F.Intrinsic.Control.If(V.Screen.SS_Form1!chk_AllDates.Value,=,0)
+	Gui.SS_Form1.dtpStart.Enabled(True)
+	Gui.SS_Form1.dtpEnd.Enabled(True)
+	V.Global.bAllDates.Set(False)
+F.Intrinsic.Control.Else
+	Gui.SS_Form1.dtpStart.Enabled(False)
+	Gui.SS_Form1.dtpEnd.Enabled(False)
+	Gui.SS_Form1.dtpStart.Value(V.Ambient.Date)
+	Gui.SS_Form1.dtpEnd.Value(V.Ambient.Date)
+	V.Global.bAllDates.Set(True)
+F.Intrinsic.Control.EndIf
+	
+
+program.sub.chk_alldates_click.end
+
+program.sub.chk_allcust_click.start
+'When "All Customers" is selected, lock the entry fields for customer range. When it is unchecked, unlock all fields.
+
+F.Intrinsic.Control.If(V.Screen.SS_Form1!chk_AllCust.Value,=,0)
+	Gui.SS_Form1.cmd_txtStartCust.Enabled(True)
+	Gui.SS_Form1.cmd_txtEndCust.Enabled(True)
+	V.Global.bAllCust.set(False)
+F.Intrinsic.Control.Else
+	Gui.SS_Form1.cmd_txtStartCust.Enabled(False)
+	Gui.SS_Form1.cmd_txtEndCust.Enabled(False)
+	Gui.SS_Form1.txtStartCust.text("")
+	Gui.SS_Form1.txtEndCust.Text("")
+	V.Global.bAllCust.Set(True)
+F.Intrinsic.Control.EndIf
+	
+program.sub.chk_allcust_click.end
+
+program.sub.cmdprint_click.start
+'This fires when the user selects "Print". This will begin processing the records to print.
+
+'Declare variables
+V.Local.sSQL.Declare(String)
+V.Local.i.Declare(Long)
+V.Local.sStartDate.Declare(String)
+V.Local.sEndDate.Declare(String)
+V.Local.sTotalTemp.Declare(String)
+V.Local.iBIRUNID.Declare(Long)
+V.Local.iLogID.Declare(Long)
+V.Local.iRPTID.Declare(Long)
+V.uGlobal.uReport.Redim(-1,-1)
+
+'Hide screen while processing
+Gui.SS_Form1..Visible(False)
+
+'Begin to Concattenate SQL statement to get Invoices in record to check against. The total statement is dependant on the paramters selected on screen.
+V.Local.sSQL.Set("SELECT INVOICE,CUSTOMER, MIN(DATE_INVOICE) AS DATE_INVOICE,SUM(AMT_INVOICE) AS TOTAL FROM V_AR_OPEN_ITEMS WHERE BATCH_CODE = '10'")
+
+'Get BI Run ID
+F.Global.BI.GetRunID(V.Local.iBIRUNID)
+'Get Report ID
+F.Global.BI.GetIDFromName("GCG_3937_BI_AVG_DAYSTOPAY.rpt",V.Local.iRPTID)
+'Start PreProc Logging
+F.Global.BI.StartLogging(V.Local.iBIRUNID,V.Local.iRPTID,-1,"GCG_3937_BI_AVG_DAYSTOPAY",V.Local.iLogID)
+
+
+'Check if date range was entered, or if all dates was selected
+F.Intrinsic.Control.If(V.Global.bAllDates,=,False)
+	F.Intrinsic.Control.if(V.Screen.SS_Form1!dtpStart.Value,<=,V.Screen.SS_Form1!dtpEnd.Value)
+		F.Intrinsic.String.Format(V.Screen.SS_Form1!dtpStart.Value,"YYYY-MM-DD",V.Local.sStartDate)
+		F.Intrinsic.String.Format(V.Screen.SS_Form1!dtpEnd.Value,"YYYY-MM-DD",V.Local.sEndDate)
+		F.Intrinsic.String.Concat(V.Local.sSQL," and DATE_INVOICE BETWEEN '",V.Local.sStartDate,"' AND '",V.Local.sEndDate,"'",V.Local.sSQL)
+	F.Intrinsic.Control.Else
+		F.Intrinsic.UI.Msgbox("Start Date must be less than or equal to End Date")
+		Gui.SS_Form1..Visible(True)
+		F.Intrinsic.Control.ExitSub
+	F.Intrinsic.Control.EndIf
+F.Intrinsic.Control.EndIf
+
+'Check if customer range was entered, or if all dates was selected
+F.Intrinsic.UI.InvokeWaitDialog("Getting Invoice Records","Please Wait")
+F.Intrinsic.Control.If(V.Global.bAllCust,=,False)
+	F.Intrinsic.control.if(V.Screen.SS_Form1!txtStartCust.Text,<=,V.Screen.SS_Form1!txtEndCust.Text)
+		F.Intrinsic.String.Concat(V.Local.sSQL," AND CUSTOMER BETWEEN '",V.Screen.SS_Form1!txtStartCust.Text,"' AND '",V.Screen.SS_Form1!txtEndCust.Text,"'",V.Local.sSQL)
+	F.Intrinsic.Control.Else
+		F.Intrinsic.UI.Msgbox("Start Customer must be less than or equal to End Customer")
+		Gui.SS_Form1..Visible(True)
+		F.Intrinsic.Control.ExitSub
+	F.Intrinsic.Control.EndIf
+F.Intrinsic.Control.EndIf
+
+'Group by invoice and customer addition to SQL
+F.Intrinsic.String.Concat(V.Local.sSQL," GROUP BY INVOICE,CUSTOMER",V.Local.sSQL)
+
+'Open recordset based on selections in SQL Statement. Load results to a UDT and close recordset
+F.ODBC.Connection!Conx.OpenLocalRecordsetRO("RST",V.Local.sSQL)
+F.Intrinsic.Variable.LoadUDTFromRecordset("Conx","RST","V.uGlobal.uReport",False)
+F.ODBC.Conx!RST.Close
+
+'Invoice records have been loaded to UDT. Looping through UDT and getting payment records for each invoice. Any records not paid in full will be flagged or removal from report.
+F.Intrinsic.Control.For(V.Local.i,0,V.uGlobal.uReport.UBound,1)
+	F.Intrinsic.UI.ChangeWaitStatus("Getting Payment and additional information",V.Local.i,0,V.uGlobal.uReport.UBound)
+	'Getting customer name
+	F.Intrinsic.String.Concat("SELECT NAME_CUSTOMER FROM  V_CUSTOMER_MASTER WHERE CUSTOMER='",V.UGLOBAL.UREPORT(V.LOCAL.I)!CUSTOMER.TRIM,"'",V.LOCAL.SSQL)
+	F.ODBC.Connection!Conx.OpenLocalRecordsetRO("rstCustName",V.Local.sSQL)
+	F.Intrinsic.Control.If(V.ODBC.Conx!rstCustName.EOF,=,True)
+		V.uGlobal.uReport(v.Local.i)!CUST_NAME.Set("Customer Master Not Found")
+	F.Intrinsic.Control.Else
+		V.uGlobal.uReport(v.Local.i)!CUST_NAME.Set(V.ODBC.Conx!rstCustname.FieldValTrim!NAME_CUSTOMER)
+	F.Intrinsic.Control.EndIf
+	F.ODBC.Conx!rstCustName.Close
+	
+	'Getting payment information
+	F.Intrinsic.String.Concat("SELECT INVOICE, SUM(AMT_INVOICE) AS TOTAL, MAX(DATE_TRANSACTION) AS DATE_PAID FROM V_AR_OPEN_ITEMS WHERE BATCH_CODE = '11' AND INVOICE = '",V.uGlobal.uReport(V.Local.i)!INVOICE.Trim,"' GROUP BY INVOICE",V.Local.sSQL)
+	F.ODBC.Connection!Conx.OpenLocalRecordsetRO("rstPayment",V.Local.sSQL)
+	F.Intrinsic.Control.If(V.ODBC.Conx!rstPayment.EOF,=,True)
+		F.Intrinsic.Variable.UDTFlagOrdinal(V.uGlobal.uReport,True,V.Local.i)
+	F.Intrinsic.Control.Else
+		F.Intrinsic.Math.Add(V.uGlobal.uReport(v.Local.i)!INVOICE_TOTAL,V.ODBC.Conx!rstPayment.FieldValTrim!TOTAL,V.Local.sTotalTemp)
+		F.Intrinsic.Control.If(V.Local.sTotalTemp,=,0)
+			V.uGlobal.uReport(V.Local.i)!DATE_PAID.Set(V.ODBC.Conx!rstPayment.FieldVal!DATE_PAID)
+			F.Intrinsic.Date.DateDiff("d",V.uglobal.uReport(v.Local.i)!DATE_INVOICE,V.uGlobal.uReport(v.Local.i)!DATE_PAID,V.uGlobal.uReport(v.Local.i)!DAYS_TO_PAY)
+		F.Intrinsic.Control.Else
+			F.Intrinsic.Variable.UDTFlagOrdinal(V.uGlobal.uReport,True,V.Local.i)
+		F.Intrinsic.Control.EndIf
+	F.Intrinsic.Control.EndIf
+	F.ODBC.Conx!rstPayment.Close
+	F.Intrinsic.String.Format(V.uGlobal.uReport(v.Local.i)!DATE_INVOICE,"YYYY-MM-DD",V.uglobal.ureport(v.local.i)!DATE_INVOICE)
+	F.Intrinsic.String.Format(V.uGlobal.uReport(V.Local.i)!DATE_PAID,"YYYY-MM-DD",V.uGlobal.uReport(V.Local.i)!DATE_PAID)
+
+F.Intrinsic.Control.Next(V.Local.i)
+F.Intrinsic.Variable.UDTDeleteFlagged(V.uGlobal.uReport)
+
+'Saving data to bi table
+F.ODBC.Connection!Conx.OpenLocalRecordsetRW("rstSave","SELECT * FROM GCG_3937_DAYSTOPAY")
+F.Intrinsic.Variable.UDTSetMemberValue(V.uGlobal.uReport!BIRUNID,V.Local.iBIRUNID)
+'F.Intrinsic.Variable.SetUDTFieldReference(V.uGlobal.uReport!BIRUNID,"BIRUNID")
+'F.Intrinsic.Variable.SetUDTFieldReference(V.uGlobal.uReport!CUSTOMER,"CUSTOMER")
+'F.Intrinsic.Variable.SetUDTFieldReference(V.uGlobal.uReport!INVOICE,"INVOICE")
+'F.Intrinsic.Variable.SetUDTFieldReference(V.uGlobal.uReport!DATE_INVOICE,"DATE_INVOICE")
+'F.Intrinsic.Variable.SetUDTFieldReference(V.uGlobal.uReport!DAYS_TO_PAY,"DAYS_TO_PAY")
+'F.Intrinsic.Variable.SetUDTFieldReference(V.uGlobal.uReport!CUST_NAME,"CUSTOMER_NAME")
+'F.Intrinsic.Variable.SetUDTFieldReference(V.uGlobal.uReport!DATE_PAID,"DATE_PAID")
+'F.Intrinsic.Variable.SetUDTFieldReference(V.uGlobal.uReport!INVOICE_TOTAL,"")
+F.Intrinsic.Control.If(V.uGlobal.uReport.UBound,=,-1)
+	F.Intrinsic.UI.Msgbox("No Records Found in Selection")
+	F.ODBC.Conx!rstSave.Close
+	Gui.SS_Form1..Visible(True)
+	F.Intrinsic.Control.ExitSub
+F.Intrinsic.Control.Else
+
+	F.Intrinsic.Control.For(V.Local.i,0,V.uGlobal.uReport.UBound,1)
+		F.ODBC.Conx!rstSave.AddNew
+		F.ODBC.Conx!RSTSAVE.Set!BIRUNID(V.uGlobal.uReport(V.Local.i)!BIRUNID)
+		F.ODBC.Conx!RSTSAVE.Set!CUSTOMER(V.uGlobal.uReport(V.Local.i)!CUSTOMER)
+		F.ODBC.Conx!RSTSAVE.Set!INVOICE(V.uGlobal.uReport(V.Local.i)!INVOICE)
+		F.ODBC.Conx!RSTSAVE.Set!DATE_INVOICE(V.uGlobal.uReport(V.Local.i)!DATE_INVOICE)
+		F.ODBC.Conx!RSTSAVE.Set!DAYS_TO_PAY(V.uGlobal.uReport(V.Local.i)!DAYS_TO_PAY)
+		F.ODBC.Conx!RSTSAVE.Set!CUSTOMER_NAME(V.uGlobal.uReport(V.Local.i)!CUST_NAME)
+		F.ODBC.Conx!RSTSAVE.Set!DATE_PAID(V.uGlobal.uReport(V.Local.i)!DATE_PAID)
+	F.Intrinsic.Control.Next(V.Local.i)
+	F.ODBC.Conx!RSTsave.Update
+'	f.Intrinsic.Variable.saveudttorecordset("CONX","RSTSAVE","V.uglobal.report")
+F.Intrinsic.Control.EndIf
+F.ODBC.Conx!rstsave.Close
+
+F.Global.BI.StopLogging(V.Local.iLogID)
+F.Global.BI.runreportpreprocessor(V.Local.iBIRUNID,V.Local.iLogID,"BIRUNID",V.Local.iBIRUNID,"",-1,True,"",1,"GSVIEW",-1,"","",V.Local.iBIRUNID)
+F.Intrinsic.Control.CallSub(Unload)
+
+
+
+
+program.sub.cmdprint_click.end
+
+Program.Sub.Comments.Start
+${$0$}$GCG_BI_AVG_DAYS_TO_PAY$}$BLEFLER$}$4/6/2014
+Program.Sub.Comments.End
+Program.Sub.ScreenSS.Start
+SS_Form1{{CAPTION::Select Parameters
+SS_Form1.CTRL{{NAME::dtpStart\\TYPE::6\\CAPTION::Date Paid Start\\TABSTOP::1\\GROUP::1\\BROWSER::0\\SIZE::1
+SS_Form1.CTRL{{NAME::dtpEnd\\TYPE::6\\CAPTION::Date Paid End\\TABSTOP::2\\GROUP::1\\BROWSER::0\\SIZE::1
+SS_Form1.CTRL{{NAME::chk_AllDates\\TYPE::9\\CAPTION::All Dates\\TABSTOP::3\\GROUP::2\\BROWSER::0\\SIZE::1
+SS_Form1.CTRL{{NAME::txtStartCust\\TYPE::2\\CAPTION::Start Customer\\TABSTOP::4\\GROUP::3\\BROWSER::1\\SIZE::1
+SS_Form1.CTRL{{NAME::txtEndCust\\TYPE::2\\CAPTION::End Customer\\TABSTOP::5\\GROUP::3\\BROWSER::1\\SIZE::1
+SS_Form1.CTRL{{NAME::chk_AllCust\\TYPE::9\\CAPTION::All Customers\\TABSTOP::6\\GROUP::4\\BROWSER::0\\SIZE::1
+SS_Form1.CTRL{{NAME::cmdPrint\\TYPE::5\\CAPTION::Print\\TABSTOP::7\\GROUP::5\\BROWSER::0\\SIZE::1
+
+Program.Sub.ScreenSS.End
+
